@@ -1,0 +1,349 @@
+{% extends 'base.html' %}
+{% block title %}
+napal
+{% endblock title %}
+
+
+{% block css %}
+    .col-md-3
+    {
+    display: inline-block;
+    margin-left:-4px;
+    }
+
+    .carousel-indicators .active {
+    background-color: blue;
+    }
+
+    .col-md-3 img{
+
+    width: 170px;
+    height: 200px;
+    }
+
+    body .carousel-indicator li{
+    background-color: blue;
+    }
+
+    body .carousel-indicators{
+    bottom: -40px;
+    }
+    .carousel-indicators li {
+        background-color: #857dce;;
+    }
+
+    body .carousel-control-prev-icon,
+    body .carousel-control-next-icon{
+    background-color: blue;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next{
+    top: auto;
+    bottom: auto;
+    padding-top: 222px;
+    }
+    body .no-padding{
+    padding-left: 0,
+    padding-right: 0;
+    }
+    .article > h1 {
+        font-size:9vmin;
+        font-family: var(--Patua);
+        color: black;
+    }
+    /* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p > span {
+  color: #1a0ce0;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+
+
+
+/* End of Footer*/
+{% endblock css %}
+
+{% block body %}
+{% load static %}
+
+
+<div class="container-fluid px-0">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/nepal1.jpg" class="d-block w-100 mx-0" alt="...">
+                <div class="carousel-caption d-none d-md-block"
+                    style=" width: 100%;height: 100%;background: rgb(32 28 28 / 70%);padding-top: 19vmin0;left:0%;bottom: 0%">
+                    <h5 style="font-family: var(--Patua);font-size: 32vmin;color: whitesmoke;position: absolute;top: 257px;left: 276px;word-spacing: 30px;">
+                        BOOKING  </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container my-3">
+<article>
+    <h1  style="font-size:9vmin;font-family: var(--Patua);color: black;">About Nepal</h1>
+    <p></p>
+    <p style="font-size:2.5vmin;font-family: var(--Patua);color: gray;">Nepal is as old as the hills, and so are its Himalayas that were formed billions of years ago, and this is where the trekking trails lie.</p>
+    <p style="font-size:2.5vmin;font-family: var(--Patua);color: gray;">These Himalayas are the beauties of Nepal and just between these Himalayas and the Hills, there are barren lands, Rocky Mountains, high mountains, deep valleys, numerous rivers, lakes, and villages.</p>
+    <p style="font-size:2.5vmin;font-family: var(--Patua);color: gray;">Far from the Himalayas is the plain region, and this contains some of the tourist attractions like Chitwan National Park and Bardia National Park, including Lumbini, the birthplace of Buddha.</p>
+    <p style="font-size:2.5vmin;font-family: var(--Patua);color: gray;">The capital of Nepal is Kathmandu, and it contains some of the famous heritage of Nepal. They are included in the sightseeing program.</p>
+    <p style="font-size:2.5vmin;font-family: var(--Patua);color: gray;">Because of the Himalayas, Nepal is famous for trekking in the world. At the same time, it is also famous for rafting, bungee jumping, sky diving, zip-lining, and mountain flights. Along with these, it has Davis falls, Gupteshower Cave, and Seti Gorge.</p>
+    <p style="font-size:2.5vmin;font-family: var(--Patua);color: gray;">Between the Himalayas and the hills, Nepal has what the trekkers want to see.</p>
+    <p></p>
+</article>
+
+<article>
+    <h1>Country Highlights</h1>
+    <ul><li style="font-size:2.5vmin;font-family: var(--Patua);color: gray;">Trek the Annapurna Circuit, Everest Base Camp, Kathmandu Valley, or off the beaten track</li>
+    <p></p>
+    <li style="font-size:2.5vmin;font-family: var(--Patua);color: gray;" style="font-size:2.5vmin;font-family: var(--Patua);color: gray;">Spend time with families, be feted by villagers, and get into the culture</li>
+    <p></p>
+    <li style="font-size:2.5vmin;font-family: var(--Patua);color: gray;">Wander Lumbini, take an Everest flight, and explore secluded valleys by car and plane</li>
+    <p></p>
+    <li style="font-size:2.5vmin;font-family: var(--Patua);color: gray;">Visit stunning temples and monasteries and enjoy festivals, such as Mani Rimdu or Tiji</li></ul>
+</article>
+</div>
+
+<div class="container my-4" >
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594581.407799153!2d81.8860985094933!3d28.37899626158084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995e8c77d2e68cf%3A0x34a29abcd0cc86de!2sNepal!5e0!3m2!1sen!2sin!4v1611901834392!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0; margin-top: 100px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+</div>
+<div class="container" >
+
+    <!--Slideshow starts here -->
+    {% for product, range, nSlides in allProds %}
+    <h5 class="my-4" style="font-size:9vmin;font-family: var(--Patua);color: black;" > {{product.0.category}} </h5>
+    <div class="row">
+        <div id="demo{{forloop.counter}}" class="col carousel slide my-3" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo{{forloop.counter}}" data-slide-to="0" class="active"></li>
+
+                {% for i in range %}
+                <li data-target="#demo{{forloop.parentloop.counter}}" data-slide-to="{{i}}"></li>
+                {% endfor %}
+            </ul>
+
+
+            <div class="container carousel-inner no-padding">
+
+                <div class="carousel-item active">
+
+
+                    {% for i in product %}
+                    <div class="col-xs-3 col-sm-3 col-md-3">
+                        <div class="card align-items-center" style="width: 18rem;">
+                            <img src='/media/{{i.image}}' class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="namepr{{i.id}}">{{i.product_name}}</h5>
+                                <p class="card-text">{{i.desc|slice:"0:53"}}...</p>
+                                 <h6 class="card-title" >INR : <span id="pricepr{{i.id}}">{{i.price}}</span></h6>
+                                <span id="divpr{{i.id}}" class="divpr">
+                                    <button id="pr{{i.id}}" class="btn btn-primary cart">BOOK</button>
+                                </span>
+                                <a href="/products/{{i.id}}"><button id="qv{{i.id}}" class="btn btn-primary cart">Quick View</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}
+                </div>
+                <div class="carousel-item">
+                    {% endif %}
+
+                    {% endfor %}
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- left and right controls for the slide -->
+        <a class="carousel-control-prev" href="#demo{{forloop.counter}}" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo{{forloop.counter}}" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+
+<footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+          <h4 class="text-light">About us</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum maxime ea similique illum corrupti</p>
+          <p class="pt-4 text-muted">Copyright ©2019 All rights reserved | This template is made with by
+            <span> Daily Tuition</span>
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h4 class="text-light">Newsletter</h4>
+          <p class="text-muted">Stay Updated</p>
+          <form class="form-inline">
+            <div class="col pl-0">
+              <div class="input-group pr-5">
+                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                <div class="input-group-prepend">
+                  <div class="input-group-text" style="background:white">
+                  <form>
+                    <i class="fa fa-arrow-right" style="font-size:35px;color:black"></i>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12 " >
+          <h4 class="text-light mx-3">Follow Us</h4>
+          <p class="text-muted mx-3">Let us be social</p>
+          <div class="column text-light" >
+    
+             <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <!-- Add font awesome icons -->
+                <a href="#" class="fa fa-facebook"
+                    style="padding: 20px;font-size: 30px;width: 30px; text-align: center;text-decoration: none;opacity: 0.7;color:white;" ></a>
+                <a href="#" class="fa fa-twitter"
+                    style="padding: 20px;font-size: 30px;width: 30px; text-align: center;text-decoration: none;opacity: 0.7;color:white;"></a> 
+                <a href="#" class="fa fa-instagram"
+                    style="padding: 20px;font-size: 30px;width: 50px; text-align: center;text-decoration: none;opacity: 0.7;color:white;"></a>
+                <a href="#" class="fa fa-youtube"
+                    style="padding: 20px;font-size: 30px;width: 50px; text-align: center;text-decoration: none;opacity: 0.7;color:white;"></a>
+                <a href="#" class="fa fa-linkedin"
+                    style="padding: 20px;font-size: 30px;width: 50px; text-align: center;text-decoration: none;opacity: 0.7;color:white;"></a>
+                <a href="#" class="fa fa-snapchat-ghost"
+                    style="padding: 20px;font-size: 30px;width: 50px; text-align: center;text-decoration: none;opacity: 0.7;color:white;"></a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </footer>
+
+{% endblock body %}
+
+
+{% block js %}
+<script>
+// Find out the cart items from localStorage
+if (localStorage.getItem('cart') == null) {
+    var cart = {};
+} else {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    updateCart(cart);
+}
+// If the add to cart button is clicked, add/increment the item
+//$('.cart').click(function() {
+$('.divpr').on('click', 'button.cart', function() {
+    var idstr = this.id.toString();
+    if (cart[idstr] != undefined) {
+        qty = cart[idstr][0] + 1;
+        
+    } else {
+        qty = 1;
+        name = document.getElementById('name'+idstr).innerHTML
+        price = document.getElementById('price'+idstr).innerHTML
+        cart[idstr] = [qty, name,parseInt(price)];
+
+    }
+    updateCart(cart);
+});
+//Add Popover to cart
+$('#popcart').popover();
+updatePopover(cart);
+
+function updatePopover(cart) {
+    console.log('We are inside updatePopover');
+    var popStr = "";
+    popStr = popStr + "<h5> Book your Tickets </h5><div class='mx-2 my-2'>";
+    var i = 1;
+    for (var item in cart) {
+        popStr = popStr + "<b>" + i + "</b>. ";
+        popStr = popStr + document.getElementById('name' + item).innerHTML.slice(0, 19) + "...Persons: " + cart[item][0] + '<br>';
+        i = i + 1;
+    }
+    popStr = popStr + "</div> <a href='/checkout'><button class='btn btn-primary' id ='checkout'>Checkout</button></a> <button class='btn btn-primary' onclick='clearCart()' id ='clearCart'>Clear Booking</button>     "
+    console.log(popStr);
+    document.getElementById('popcart').setAttribute('data-content', popStr);
+    $('#popcart').popover('show');
+}
+
+function clearCart() {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    for (var item in cart) {
+        document.getElementById('div' + item).innerHTML = '<button id="' + item + '" class="btn btn-primary cart">Book</button>'
+    }
+    localStorage.clear();
+    cart = {};
+    updateCart(cart);
+}
+
+function updateCart(cart) {
+    var sum = 0;
+    for (var item in cart) {
+        sum = sum + cart[item][0];
+        document.getElementById('div' + item).innerHTML = "<button id='minus" + item + "' class='btn btn-primary minus'>-</button> <span id='val" + item + "''>" + cart[item][0] + "</span> <button id='plus" + item + "' class='btn btn-primary plus'> + </button>";
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    document.getElementById('cart').innerHTML = sum;
+    console.log(cart);
+    updatePopover(cart);
+}
+// If plus or minus button is clicked, change the cart as well as the display value
+$('.divpr').on("click", "button.minus", function() {
+    a = this.id.slice(7, );
+    cart['pr' + a][0] = cart['pr' + a][0] - 1;
+    cart['pr' + a][0] = Math.max(0, cart['pr' + a][0]);
+    document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
+    updateCart(cart);
+});
+$('.divpr').on("click", "button.plus", function() {
+    a = this.id.slice(6, );
+    cart['pr' + a][0] = cart['pr' + a][0] + 1;
+    document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
+    updateCart(cart);
+});
+</script>
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+

@@ -1,0 +1,652 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock title %}
+{% block css %}
+.leftWelcome > h2{
+    font-size: 40px;
+    line-height: 1.10909;
+    font-family: Coda Caption script=latin rev=1;
+    font-weight: 800;
+    font-style: normal;
+    color: #4e4e5f;
+}
+.titleSections h2 span.letter{
+    font-family:"Poppins", sans-serif !important;
+    font-size:1.1em !important;
+    font-weight:700;
+}
+
+
+
+:root {
+  
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #929597, #576881);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+
+
+
+
+
+/* Section 1 */
+.section-1 {
+  padding: 20vmin 0vmin;
+}
+
+.section-1 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+  position: absolute;
+  top: 7vmin;
+  left: -18vmin;
+  background: white;
+  border-radius: 3px;
+  text-align: left;
+  padding: 13vmin 5vmin 20vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  font-family: var(--Rubik);
+  z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* End  Section 1 */
+
+
+
+
+/* Section 2 */
+.purchase > h1 {
+  padding-top: 15vmin;
+  padding-bottom: 0.1em;
+  font-family: var(--Lobster);
+}
+
+.purchase > p {
+  color: var(--light-black);
+  font-size: 3vmin;
+  padding-bottom: 10vmin;
+}
+.cover {
+  width: 100%;
+  height: 55vmin;
+  background: url(/static/pexels-photo-452738.jpeg);
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+}
+
+.cover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.cover .content {
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.7);
+  padding-top: 19vmin;
+}
+
+.cover .content > h1 {
+  font-family: var(--Patua);
+  font-size: 6vmin;
+  color: whitesmoke;
+}
+
+.cover .content > p {
+  font-family: var(--Rubik);
+  font-size: 2vmin;
+  color: #e5e5e5;
+}
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: rgba(155, 155, 156, 0.774);
+  width: 17rem;
+  height: 12rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.349);
+}
+
+.numbers {
+  margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+  font-size: 5rem;
+  color: rgb(30, 24, 37);
+}
+
+.numbers .rect > p {
+  font-family: var(--Patua);
+}
+/* End  Section 2 */
+
+/*  Section 3 */
+.section-3 {
+  height: 70vmin;
+  margin-top: 15vmin;
+  background: var(--bggradient);
+}
+
+.section-3 .col-md-12 > h1 {
+  padding: 2em 0 0.5em 0;
+  color: whitesmoke;
+  font-size: 6vmin;
+}
+
+.section-3 .col-md-12 > p {
+  padding: 0 4em;
+  padding-bottom: 2em;
+  color: var(--light-gray);
+  font-size: 3vmin;
+}
+
+.section-3 .desktop {
+  background: white;
+  display: inline-block;
+  border-radius: 3em;
+  padding: 2vmin 4.5vmin;
+  margin: 1em;
+}
+
+.section-3 .desktop h3 {
+  font-size: 4vmin;
+}
+
+.section-3 .desktop p {
+  font-size: 2vmin;
+}
+
+/* End Section 3 */
+
+
+
+/* Section 4 */
+
+.section-4 .container h1 {
+  font-size: 6vmin;
+  padding-top: 14vmin;
+}
+
+.section-4 .team {
+  padding: 10vmin 4vmin;
+}
+
+.section-4 .card {
+  width: 22em;
+  margin-top: 10vmin;
+}
+
+.section-4 .card .card-text {
+  padding: 0.5em;
+}
+
+.section-4 .card-body > a {
+  font-size: 1.5em;
+}
+
+.section-4 .carousel-item {
+  padding-left: 3rem;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+/* End Section 4 */
+
+
+
+/* purchase  card
+.purchase > h1 {
+  padding-top: 15vmin;
+  padding-bottom: 0.1em;
+  font-family:var(--Lobster);
+}
+
+.purchase > p {
+  color: var(--light-black);
+  font-size: 3vmin;
+  padding-bottom: 10vmin;
+}
+
+.purchase .cards .card {
+  width: 22rem;
+  margin: 3vmin 3vmin;
+}
+
+.cards div {
+  padding: 0;
+  margin: 0;
+}
+
+.cards .title {
+  background: rgba(208, 241, 241, 0.199);
+  padding: 1.4em 2.5em;
+  font-size: 2vmin;
+}
+
+.card .card-text {
+  padding: 2.5rem 3rem;
+  color: var(--light-black);
+}
+
+.card-body .pricing {
+  background: rgba(208, 241, 241, 0.199);
+  border-top-right-radius: 170px;
+  border-top-left-radius: 170px;
+}
+
+.card-body .pricing > h1 {
+  font-size: 10vmin;
+  padding: 1em 0.5em;
+}
+ End of purchase card */
+
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p > span {
+  color: #1a0ce0;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+
+
+
+/* End of Footer*/
+
+
+{% endblock css %}
+
+{% block body %}
+
+
+
+<div class="container-fluid px-0">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/nepal1.jpg" class="d-block w-100 mx-0" alt="...">
+                <div class="carousel-caption d-none d-md-block"
+                    style=" width: 100%;height: 100%;background: rgb(32 28 28 / 70%);padding-top: 19vmin0;left:0%;bottom: 0%">
+                    <h5 style="font-family: var(--Patua);font-size: 32vmin;color: whitesmoke;position: absolute;top: 257px;left: 471px;word-spacing: 30px;">
+                        NEPAL  </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% comment %} <a class="carousel-indicators  " href="#"><img src="/static/tag.jfif" alt="logo" title="logo"></a> {% endcomment %}
+
+<img src="/static/welcomeimg.jpg" class="rounded float-end" style="margin-top: 150px;" alt="...">
+
+<div class="leftWelcome col-md-7 col-lg-7 col-sm-12 text-left " style="margin-top: 200px; text-align:center;font-family: Poppins, sans-serif !important;">
+    <h2 >Unleash your dream</h2>
+    <p>Travelers from all over the world come to do Nepal tours and trekking in their leisure time. A trip to Nepal
+        is a
+        remarkable moment in a lifetime. Famous for trekking, mountaineering, tours, adventures, jungle safaris,
+        volunteering, filming tour/ photography tours, and family holidays. Nepal tour is different than other
+        countries
+        because of the world's highest mountain- Mount Everest 8848m and other uncountable mountains. The top eight
+        highest
+        mountains are in Nepal. So how we can say that- Nepal is the land of Himalayas. More on, Nepal is more than
+        the
+        Himalayas; a land of brave people known as Gorkhali,…</p> <a href="aboutus" class="tmgbtn">Read More About Us <i
+            class="fa fa-angle-right"></i></a>
+</div>
+
+
+
+
+
+
+
+    <main>
+        
+
+
+
+            <!-- #this is trial one  -->
+   
+
+
+     <section class="section-1">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="pray">
+              <img src="/static/n7.jpg" alt="Pray" class="">
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="panel text-left">
+              <h1>Nepal</h1>
+              <p class="pt-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere iure adipisci harum ducimus accusantium, repudiandae aperiam
+                voluptatum, id ex ratione omnis reiciendis possimus officiis.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae, tenetur quidem eum aliquid vel labore sint placeat
+                ad deserunt consectetur fugit ullam. Eius unde neque ducimus obcaecati ipsum quos vero totam recusandae hic
+                expedita nemo sit, illum harum. Quisquam impedit ullam itaque facere et ad molestiae quod reprehenderit excepturi!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+
+     <section class="section-2 container-fluid p-0">
+      <div class="cover">
+        <div class="overlay"></div>
+        <div class="content text-center">
+          <h1>Some Features That Made Us Unique</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eum?
+          </p>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+          <div class="rect">
+            <h1>2345</h1>
+            <p>Happy Client</p>
+          </div>
+          <div class="rect">
+            <h1>6784</h1>
+            <p>Short trips </p>
+          </div>
+          <div class="rect">
+            <h1>1056</h1>
+            <p>Long trips </p>
+          </div>
+          <div class="rect">
+            <h1>9152</h1>
+            <p>success</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section-1">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="pray">
+              <img src="/static/n6.jpg" alt="Pray" class="">
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="panel text-left">
+              <h1>Nepal</h1>
+              <p class="pt-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere iure adipisci harum ducimus accusantium, repudiandae aperiam
+                voluptatum, id ex ratione omnis reiciendis possimus officiis.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae, tenetur quidem eum aliquid vel labore sint placeat
+                ad deserunt consectetur fugit ullam. Eius unde neque ducimus obcaecati ipsum quos vero totam recusandae hic
+                expedita nemo sit, illum harum. Quisquam impedit ullam itaque facere et ad molestiae quod reprehenderit excepturi!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+
+
+
+    <section class="section-3 container-fluid p-0 text-center">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h1>Download Our App for all Platform</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem alias perspiciatis omnis quod possimus odit
+            voluptatum! Sunt ea quasi praesentium, tenetur doloribus animi obcaecati, sint nemo quae laudantium iusto unde
+            eaque nostrum nobis voluptatum
+          </p>
+        </div>
+      </div>
+      <div class="platform row">
+        <div class="col-md-6 col-sm-12 text-right">
+          <div class="desktop shadow-lg">
+            <div class="d-flex flex-row justify-content-center">
+
+              <div class="text text-left">
+                <h3 class="pt-1 m-0">Desktop</h3>
+                <a href="#" class="p-0 m-0">On website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 text-left">
+          <div class="desktop shadow-lg">
+            <div class="d-flex flex-row justify-content-center">
+              
+              <div class="text text-left">
+                <h3 class="pt-1 m-0">On Mobile</h3>
+                <a href="#" class="p-0 m-0">On Play Store</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   </main>
+     
+
+    <!-- Section 4 -->
+    <section class="section-4">
+      <div class="container text-center">
+        <h1 class="text-dark">What our Reader's Say about us</h1>
+        <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="team row ">
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="/static/p3.jpg" class="img-fluid border-radius p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Blalock Jolene</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
+                    minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                  <p class="text-black-50">CEO at Google</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <div class="card mr-2 d-inline-block shadow">
+                      <div class="card-img-top">
+                        <img src="/static/p2.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">Allen Agnes</h3>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
+                          minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                        <p class="text-black-50">CEO at Google</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card  d-inline-block mr-2 shadow">
+                      <div class="card-img-top">
+                        <img src="/static/p1.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">Amiel Barbara</h3>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
+                          minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                        <p class="text-black-50">CEO at Google</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        </div>
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="/static/p4.jpg" class="img-fluid border-radius p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Olivia Louis</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
+                    minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                  <p class="text-black-50">CEO at Google</p>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+          <h4 class="text-light">About us</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum maxime ea similique illum corrupti</p>
+          <p class="pt-4 text-muted">Copyright ©2019 All rights reserved | This template is made with by
+            <span> Daily Tuition</span>
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h4 class="text-light">Newsletter</h4>
+          <p class="text-muted">Stay Updated</p>
+          <form class="form-inline">
+            <div class="col pl-0">
+              <div class="input-group pr-5">
+                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                <div class="input-group-prepend">
+                  <div class="input-group-text" style="background:white">
+                  <form>
+                    <i class="fa fa-arrow-right" style="font-size:35px;color:black"></i>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12 " >
+          <h4 class="text-light mx-3">Follow Us</h4>
+          <p class="text-muted mx-3">Let us be social</p>
+          <div class="column text-light" >
+          
+             <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <!-- Add font awesome icons -->
+                <a href="#" class="fa fa-facebook"
+                    style="padding: 20px;font-size: 30px;width: 30px; text-align: center;text-decoration: none;opacity: 0.7;color:white;" ></a>
+                <a href="#" class="fa fa-twitter"
+                    style="padding: 20px;font-size: 30px;width: 30px; text-align: center;text-decoration: none;opacity: 0.7;color:white;"></a> 
+                <a href="#" class="fa fa-instagram"
+                    style="padding: 20px;font-size: 30px;width: 50px; text-align: center;text-decoration: none;opacity: 0.7;color:white;"></a>
+                <a href="#" class="fa fa-youtube"
+                    style="padding: 20px;font-size: 30px;width: 50px; text-align: center;text-decoration: none;opacity: 0.7;color:white;"></a>
+                <a href="#" class="fa fa-linkedin"
+                    style="padding: 20px;font-size: 30px;width: 50px; text-align: center;text-decoration: none;opacity: 0.7;color:white;"></a>
+                <a href="#" class="fa fa-snapchat-ghost"
+                    style="padding: 20px;font-size: 30px;width: 50px; text-align: center;text-decoration: none;opacity: 0.7;color:white;"></a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+{% endblock body %}
+
+{% block js %}
+{% endblock js %}
+
+
+
